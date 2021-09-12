@@ -1,0 +1,16 @@
+.App-header {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--sweet-tomato);
+  color: white;
+  min-height: 8vh;
+}
+
+h1 {
+  margin: 0;
+}
+

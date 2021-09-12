@@ -8,7 +8,7 @@ import './i18n/i18n';
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={<p>espere</p>}>
-    <App />
+      <App />
     </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
