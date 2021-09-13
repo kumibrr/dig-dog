@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { render, screen } from '@testing-library/react';
 
 const Header = lazy(() => import('./header'))
@@ -13,4 +13,5 @@ test('Header is rendered', async () => {
   const select = await screen.findByRole('list');
   expect(pageTitle).toBeInTheDocument();
   expect(select).toBeInTheDocument();
+  expect(select.childElementCount).toBeGreaterThan(0);
 });
